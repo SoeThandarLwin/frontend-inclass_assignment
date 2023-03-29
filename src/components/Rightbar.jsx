@@ -22,7 +22,7 @@ const Rightbar = () => {
   ];
 
   return (
-    <Box>
+    <Box sx={{ display: { xs: 'none', md: 'block' }, padding: '0 1em' }}>
       <Typography variant="h6">Latest Photos</Typography>
       <Box>
         <ImageList cols={2} rowHeight={125} sx={{ width: 250, height: 255 }}>

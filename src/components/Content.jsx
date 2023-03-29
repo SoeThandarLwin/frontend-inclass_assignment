@@ -11,106 +11,104 @@ import Rightbar from "./Rightbar";
 
 function Content() {
   return (
-    <div className="test">
-      <Grid container direction={"row"}>
-        <Grid xs={2}>
-          <Sidebar />
-        </Grid>
-        <Grid xs={6}>
-          <Box>
-            <Typography variant="h6">Welcome to My Website</Typography>
-            <Typography variant="body1">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-              incidunt obcaecati accusamus pariatur facere, quisquam, numquam
-              tenetur repellat dolor fugiat vel expedita asperiores nesciunt
-              ipsa quia, neque molestias? Doloremque, cum?
-            </Typography>
+    <Grid container direction="row">
+      <Grid xs={0} md={2} sx={{ display: { xs: "none", md: "block" } }}>
+        <Sidebar />
+      </Grid>
+      <Grid xs={12} md={6}>
+        <Box>
+          <Typography variant="h6">Welcome to My Website</Typography>
+          <Typography variant="body1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+            incidunt obcaecati accusamus pariatur facere, quisquam, numquam
+            tenetur repellat dolor fugiat vel expedita asperiores nesciunt ipsa
+            quia, neque molestias? Doloremque, cum?
+          </Typography>
 
-            <Typography variant="body1">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-              incidunt obcaecati accusamus pariatur facere, quisquam, numquam
-              tenetur repellat dolor fugiat vel expedita asperiores nesciunt
-              ipsa quia, neque molestias? Doloremque, cum?
-            </Typography>
-          </Box>
+          <Typography variant="body1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+            incidunt obcaecati accusamus pariatur facere, quisquam, numquam
+            tenetur repellat dolor fugiat vel expedita asperiores nesciunt ipsa
+            quia, neque molestias? Doloremque, cum?
+          </Typography>
+        </Box>
 
-          <Grid>
-            <Grid container spacing={2} columns={16}>
-              <Grid item xs={8}>
-                <Card sx={{ maxWidth: 345 }}>
-                  <CardActionArea>
-                    <CardMedia
-                      component="img"
-                      height="140"
-                      image="../assets/coconut.jpeg"
-                      alt="green iguana"
-                    />
-                    <CardContent>
-                      <Typography gutterBottom variant="h5" component="div">
-                        Lizard
-                      </Typography>
-                      <Typography variant="body2" color="text.secondary">
-                        Lizards are a widespread group of squamate reptiles,
-                        with over 6,000 species, ranging across all continents
-                        except Antarctica
-                      </Typography>
-                    </CardContent>
-                  </CardActionArea>
-                </Card>
-              </Grid>
-              <Grid item xs={8}>
-                <Card sx={{ maxWidth: 345 }}>
-                  <CardActionArea>
-                    <CardMedia
-                      component="img"
-                      height="140"
-                      image="../assets/coconut.jpeg"
-                      alt="green iguana"
-                    />
-                    <CardContent>
-                      <Typography gutterBottom variant="h5" component="div">
-                        Lizard
-                      </Typography>
-                      <Typography variant="body2" color="text.secondary">
-                        Lizards are a widespread group of squamate reptiles,
-                        with over 6,000 species, ranging across all continents
-                        except Antarctica
-                      </Typography>
-                    </CardContent>
-                  </CardActionArea>
-                </Card>
-              </Grid>
+        <Grid>
+          <Grid container spacing={2} columns={12}>
+            <Grid item xs={12} sm={12} md={6}>
+              <Card>
+                <CardActionArea>
+                  <CardMedia
+                    component="img"
+                    height="140"
+                    image="../assets/coconut.jpeg"
+                    alt="green iguana"
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      Lizard
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      Lizards are a widespread group of squamate reptiles, with
+                      over 6,000 species, ranging across all continents except
+                      Antarctica
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+            </Grid>
+            <Grid item md={6} sm={6} xs={12}>
+              <Card>
+                <CardActionArea>
+                  <CardMedia
+                    component="img"
+                    height="140"
+                    image="../assets/coconut.jpeg"
+                    alt="green iguana"
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      Lizard
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      Lizards are a widespread group of squamate reptiles, with
+                      over 6,000 species, ranging across all continents except
+                      Antarctica
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+            </Grid>
 
-              <Grid item xs={8}>
-                <Card sx={{ maxWidth: 345 }}>
-                  <CardActionArea>
-                    <CardMedia
-                      component="img"
-                      height="140"
-                      image="../assets/coconut.jpeg"
-                      alt="green iguana"
-                    />
-                    <CardContent>
-                      <Typography gutterBottom variant="h5" component="div">
-                        Lizard
-                      </Typography>
-                      <Typography variant="body2" color="text.secondary">
-                        Lizards are a widespread group of squamate reptiles,
-                        with over 6,000 species, ranging across all continents
-                        except Antarctica
-                      </Typography>
-                    </CardContent>
-                  </CardActionArea>
-                </Card>
-              </Grid>
+            <Grid item md={6} sm={6} xs={12}>
+              <Card>
+                <CardActionArea>
+                  <CardMedia
+                    component="img"
+                    height="140"
+                    image="../assets/coconut.jpeg"
+                    alt="green iguana"
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      Lizard
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      Lizards are a widespread group of squamate reptiles, with
+                      over 6,000 species, ranging across all continents except
+                      Antarctica
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+              </Card>
             </Grid>
           </Grid>
         </Grid>
-        <Grid xs={4}>
-            <Rightbar />
-        </Grid>
       </Grid>
-    </div>
+      <Grid xs={0} md={4} sx={{ display: { xs: "none", md: "block" } }}>
+        <Rightbar />
+      </Grid>
+    </Grid>
   );
 }
 
