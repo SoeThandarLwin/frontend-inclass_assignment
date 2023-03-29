@@ -24,6 +24,7 @@ function Content() {
             tenetur repellat dolor fugiat vel expedita asperiores nesciunt ipsa
             quia, neque molestias? Doloremque, cum?
           </Typography>
+          <br />
 
           <Typography variant="body1">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
@@ -31,6 +32,8 @@ function Content() {
             tenetur repellat dolor fugiat vel expedita asperiores nesciunt ipsa
             quia, neque molestias? Doloremque, cum?
           </Typography>
+          <br />
+
         </Box>
 
         <Grid>
